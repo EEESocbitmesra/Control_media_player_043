@@ -74,12 +74,7 @@ distL =dist; //get distance of left sensor
 calculate_distance(trigger2,echo2);
 distR =dist; //get distance of right sensor
 
-//Uncomment for debudding
-/*Serial.print("L=");
-Serial.println(distL);
-Serial.print("R=");
-Serial.println(distR);
-*/
+
 if (distL <10 && distR<10)//Detect both hands
 {Serial.println("JUMP");
 delay (500);}
